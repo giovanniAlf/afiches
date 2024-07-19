@@ -1,55 +1,88 @@
 body {
-    background-image: url(moto.png);
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 20px;
-    box-sizing: border-box;
+  background-image: url(moto.png);
+  font-family: Arial, sans-serif;
+  background-color: var(--color-4);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--heigth);
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
+  background-color: var(--color-3);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .card img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: contain;
-    background-color: #f4f4f4;
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  background-color: var(--color-1);
 }
 
 .card h2 {
-    margin: 10px 0;
-    font-size: 24px;
+  margin: 10px 0;
+  font-size: 24px;
 }
 
 .card p {
-    padding: 0 20px 20px;
-    color: #666;
-    font-size: 16px;
+  padding: 0 20px 20px;
+  color: black;
+  font-size: 16px;
 }
+
+:root {
+  --color-1: gold;
+  --color-2: blue;
+  --color-3: silver;
+  --color-4: purple;
+   --color-5: black;
+  --color-6: white;
+  --color-7: #fed922;
+  --color-8:#3e5f8a;
+  --font-s:24px;
+  --width1:100%;
+  --width2:300px;
+  --heigth:100vh;
+  
+  }
+  .ver-mas-btn{
+    background-color: var(--color-1);
+    cursor: pointer;
+    color: var(--color-5);
+    border-radius: var(--color-3);
+    border: solid 1px var(--color-3);
+    }
+        button:hover {
+          background-color: var(--color-6);
+          border: var(--color-5);
+          color: var(--color-1);
+          border: solid 1px var(--color-2);
+        }
+        h2{
+            color: var(--color-4);
+
+        }
